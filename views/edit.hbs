@@ -1,0 +1,12 @@
+<div style="display: flex; justify-content: center;">
+  <div style="width: 80%;">
+    <form class="newTwitBlog" action="/edit/{{post._id}}" method="POST">
+      <textarea class="newTwitForms" name="content" id="" cols="80" rows="10"
+        placeholder="Here you can tweet">{{post.content}}</textarea>
+      <input class="newTwitForms hide" value="{{post.img}}" type="url" name="img" id=""
+        placeholder="Image URL">
+      <button id="showInput" class="newTwitButton">Change image</button>
+      <button class="newTwitButton">SAVE</button>
+    </form>
+  </div>
+</div>

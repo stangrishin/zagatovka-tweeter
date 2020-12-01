@@ -1,0 +1,23 @@
+<div class="toCenter">
+  <div class="homeBodyBlock">
+    {{> newTwit}}
+    <h2 style="margin: 15px;">Last tweets:</h2>
+    {{#each twit}}
+    <article id="{{this._id}}" class="twitBodyBlock">
+      <div class="twitImgBlock"><img width="150px" height="150px" src='{{this.img}}' alt=""></div>
+      <div class="twitContentMain">
+        <div class="twitFirstLine">
+          <div>{{this.authorName}} tweeted:</div>
+          <div class="likesBar">
+            <div id="counter{{this._id}}">{{this.likes.length}}</div>
+            <div><img id="likeImg" width="30px" height="30px"
+                src="https://img.icons8.com/pastel-glyph/2x/facebook-like.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div style="white-space: pre-line;">{{this.content}}</div>
+      </div>
+    </article>
+    {{/each}}
+  </div>
+</div>

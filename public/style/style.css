@@ -1,0 +1,323 @@
+.nav {
+  justify-content: space-between;
+}
+
+.navBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  height: 50px;
+}
+
+.forNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  width: 30%;
+}
+.forNavLog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.forNavLink {
+  color: black;
+  margin-bottom: 0;
+}
+.forNav1:link {
+  text-decoration: none;
+}
+.forNav1:visited {
+  text-decoration: none;
+}
+.forNav1:hover {
+  text-decoration: none;
+}
+.forNav1:active {
+  text-decoration: none;
+}
+
+.regForm {
+  width: 650px;
+  display: flex;
+  align-self: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  justify-content: space-around;
+}
+.formColumn {
+  flex-direction: column;
+}
+.field {
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid rgba(145, 58, 226, 0.514);
+  color: rgb(50, 2, 95);
+  background-color: #fff;
+  padding: 10px;
+  margin: 20px;
+  outline: none;
+}
+.regButtons {
+  width: 300px;
+  color: rgb(50, 2, 95);
+  border: 1px solid rgba(145, 58, 226, 0.514);
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(3, 5, 85, 0.781);
+  margin: auto;
+  border-radius: 20px;
+  outline: none;
+}
+.regButtons:hover {
+  background-color: rgb(50, 2, 95);
+  color: #fff;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.title {
+  text-align: center;
+  font-size: 44px;
+
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  color: grey;
+  font-weight: 500;
+  /* background: linear-gradient(90deg, #000, #fff, #000);
+  animation: animate 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0); */
+}
+.mainBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.leftBar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  min-width: 130px;
+  height: 91vh;
+  margin: 20px 5px 5px 5px;
+  padding: 5px;
+  justify-content: space-between;
+}
+.oldPlans {
+  min-width: 130px;
+  height: 44.5vh;
+  border: solid rgba(3, 5, 85, 0.781) 1px;
+  /* padding: 5px; */
+  border-radius: 13px;
+}
+.students {
+  min-width: 130px;
+  height: 44.5vh;
+  border: solid rgba(3, 5, 85, 0.781) 1px;
+  /* padding: 5px; */
+  border-radius: 13px;
+}
+.mainBlock {
+  width: 55%;
+  border-radius: 13px;
+  min-width: 130px;
+  height: 90vh;
+  border: solid rgba(3, 5, 85, 0.781) 1px;
+  margin: 20px 5px 5px 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mainCalendar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  min-width: 130px;
+  height: 91vh;
+  margin: 20px 5px 5px 5px;
+  padding: 5px;
+  justify-content: space-between;
+}
+.calender {
+  min-width: 130px;
+  height: 44.5vh;
+  border: solid rgba(3, 5, 85, 0.781) 1px;
+  /* padding: 5px; */
+  border-radius: 13px;
+}
+.lessons {
+  min-width: 130px;
+  height: 44.5vh;
+  border: solid rgba(3, 5, 85, 0.781) 1px;
+  /* padding: 5px; */
+  border-radius: 13px;
+}
+
+.navBlock {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+.navBlockButtons {
+  width: 300px;
+  color: rgb(50, 2, 95);
+  border: 1px solid rgba(145, 58, 226, 0.514);
+  padding: 5px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(3, 5, 85, 0.781);
+  margin: auto;
+  border-radius: 20px;
+  outline: none;
+}
+.navBlockButtons:hover {
+  background-color: rgb(50, 2, 95);
+  color: #fff;
+}
+.infoBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+.timetableBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  min-width: 130px;
+  height: 80%;
+  margin: 10px 10px 10px 10px;
+  padding: 5px;
+  border: solid rgba(3, 5, 85, 0.781) 2px;
+  border-radius: 13px;
+  justify-content: space-around;
+}
+.infoBlockNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+.inputBlock {
+  min-height: 300px;
+  width: 80%;
+  margin: 10px 10px 10px 10px;
+  padding: 5px;
+  border: solid rgba(3, 5, 85, 0.781) 2px;
+  border-radius: 13px;
+  outline: none;
+}
+
+.hiddenStudent {
+  /* padding: 40px; */
+  margin-bottom: 10px;
+  border: solid, 3px rgba(3, 5, 85, 0.781) 2px;
+  background-color: rgb(145, 58, 226);
+  align-self: center;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  display: none;
+}
+.homeBodyBlock {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* align-items: center; */
+}
+.twitBodyBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid black 1px;
+  border-radius: 20px;
+  margin: 10px;
+}
+.twitImgBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.twitContentMain {
+  width: 80%;
+  margin: 10px;
+}
+.toCenter {
+  display: flex;
+  justify-content: center;
+}
+.twitFirstLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.newTwitBlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+.newTwitForms {
+  width: 100%;
+  border-radius: 20px;
+  margin: 5px;
+  outline: none;
+  padding: 10px;
+}
+.newTwitButton {
+  width: 100%;
+  border-radius: 20px;
+  margin: 5px;
+  outline: none;
+}
+.hide {
+  display: none;
+}
+.likesBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.editBar {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

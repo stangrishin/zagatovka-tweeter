@@ -1,0 +1,39 @@
+<div class="toCenter">
+
+
+  <div class="homeBodyBlock">
+    {{> newTwit}}
+    <h2 style="margin: 15px;">Last tweets:</h2>
+    {{#each twit}}
+    <article id="{{this._id}}" class="twitBodyBlock">
+      <div class="twitImgBlock"><img width="150px" height="150px" src='{{this.img}}' alt=""></div>
+      <div>
+
+        <div></div>
+      </div>
+      <div class="twitContentMain">
+        <div class="twitFirstLine">
+          <div>{{this.authorName}} tweeted:</div>
+          <div class="likesBar">
+            <div id="counter{{this._id}}">{{this.likes.length}}</div>
+            <div><img style="cursor: pointer;" id="likeImg" width="30px" height="30px"
+                src="https://dl.memuplay.com/new_market/img/video.like.icon.2020-08-19-22-11-05.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div style="white-space: pre-line;">{{this.content}}</div>
+        <div class="editBar">
+          <div><a href='/edit/{{this._id}}'><img style="cursor: pointer;" id="edit" width="20px" height="20px"
+                src="https://image.flaticon.com/icons/png/512/84/84380.png"
+                alt="" srcset=""></a>
+          </div>
+          <div><img style="margin-left: 10px; cursor: pointer" id="delete" width="20px" height="20px"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Icons8_flat_delete_generic.svg/723px-Icons8_flat_delete_generic.svg.png"
+              alt="" srcset="">
+          </div>
+        </div>
+      </div>
+    </article>
+    {{/each}}
+  </div>
+</div>

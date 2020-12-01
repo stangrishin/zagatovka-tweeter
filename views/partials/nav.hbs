@@ -1,0 +1,21 @@
+<nav class=" navbar-expand-lg navbar-light bg-light ">
+  <div class="navBlock">
+    <div class="forNavLog ">
+      <a class="forNavLink " href="/">Tweeter-desk</a>
+    </div>
+    {{#if email}}
+    <div class="forNavLog ">
+      <p class="forNavLink">Greeting, {{name}}! The desert awaits you!</p>
+    </div>
+    <div class="forNav">
+      <a class="forNavLink" href="/profile">Profile</a>
+      <a class="forNavLink" href="/signout">Logout</a>
+    </div>
+    {{else}}
+    <div class="forNav ">
+      <a class="forNavLink" href="/signIn">Sign In</a>
+      <a class="forNavLink" href="/registration">Registration</a>
+    </div>
+    {{/if}}
+  </div>
+</nav>

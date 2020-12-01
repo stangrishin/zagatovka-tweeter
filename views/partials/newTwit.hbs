@@ -1,0 +1,20 @@
+<div></div>{{#unless email}}
+<h4>To tweet, please sign in or register</h4>
+{{/unless}}
+{{#if email}}
+<div style="width: 100%">
+  <h2>New Tweet:</h2>
+  <div>
+    <div>
+      <form class="newTwitBlog" action="/newPost" method="POST">
+        <textarea class="newTwitForms" name="content" id="" cols="80" rows="10"
+          placeholder="Here you can tweet"></textarea>
+        <input class="newTwitForms hide" type="url" name="img" id="" placeholder="Insert image URL">
+        <button id="showInput" class="newTwitButton" type="button">Add image</button>
+        <button class="newTwitButton">Tweet</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+{{/if}}
